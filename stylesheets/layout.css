@@ -3,5 +3,101 @@ body {
     overflow-x: hidden;
     display: block;
     background-color: #232121;
-    height: auto;
+    background-image: url('../images/main_page_bg.svg');
+    height: 3007px;
+}
+/* меню */
+
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+}
+
+.menutext{
+  font-size: 1.3vw;
+  text-decoration: none;
+  color: #E9E9E9;
+  display: flex;
+  padding: 0.8vw 3vw;
+  justify-content: center;
+  align-items: center;
+}
+/* главный блок */
+.hero-block {
+    display: grid;
+    grid-template-columns: 35vw 25vw;
+    gap: 30vw;
+    margin: 4vw;
+    padding: 0 20px;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    font-size: 1.2vw;
+    color: #E9E9E9;
+    letter-spacing: 0.2vw;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+.title {
+    font-size: 3.5vw;
+    color: #E9E9E9;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-opposite-subtitle {
+    color: #E9E9E9;
+    font-size: 1.1vw;
+    line-height: 1.5;
+    margin-top: 10vh;
+    margin-bottom: 12vh;
+}
+
+.text-opposite-title {
+    color: #E9E9E9;
+    font-size: 1.1vw;
+    line-height: 1.5;
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+/* схема страхов */
+.scheme-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1vh 0;
+    padding: 0;
+}
+
+.scheme-heading {
+    font-size: 1.2vw;
+    color: #E9E9E9;
+    letter-spacing: 0.2vw;
+    margin-top: 10vh;
+    text-align: center;
+    margin-bottom: 5vh;
+    justify-content: center; 
+}
+
+.scheme-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
