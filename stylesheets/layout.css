@@ -842,7 +842,7 @@ body {
     width: clamp(10px, 0.8vw, 14px);
     height: clamp(6px, 0.5vw, 10px);
     display: inline-block;
-    background-image: url('../images/arrow1.svg');
+    background-image: url('./images/arrow1.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -850,7 +850,7 @@ body {
 }
 
 .accordion__arrow.is-open {
-    background-image: url('../images/arrow2.svg');
+    background-image: url('./images/arrow2.svg');
 }
 
 .accordion__panel {
@@ -900,7 +900,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/button.svg');
+    background-image: url('./images/button.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -908,7 +908,7 @@ body {
 }
 
 .add-to-cart:hover {
-    background-image: url('../images/button_hvr.svg');
+    background-image: url('./images/button_hvr.svg');
 }
 
 .btn-text {
@@ -1071,7 +1071,7 @@ body {
     width: clamp(11px, 1vw, 16px);
     height: clamp(17px, 1.55vw, 24px);
     flex-shrink: 0;
-    background-image: url('../images/arrow1.svg');
+    background-image: url('./images/arrow1.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1079,7 +1079,7 @@ body {
 }
 
 .accordion__item.is-open .accordion__arrow {
-    background-image: url('../images/arrow2.svg');
+    background-image: url('./images/arrow2.svg');
 }
 
 .accordion__item.is-disabled .accordion__arrow {
@@ -1450,11 +1450,11 @@ body {
 }
 
 #prevSlide {
-    background-image: url('../images/Arrow3.svg');
+    background-image: url('./images/Arrow3.svg');
 }
 
 #nextSlide {
-    background-image: url('../images/Arrow4.svg');
+    background-image: url('./images/Arrow4.svg');
 }
 
 .about-slider__btn:hover {
@@ -2010,7 +2010,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/button2.svg');
+    background-image: url('./images/button2.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -2026,7 +2026,7 @@ body {
 }
 
 .cart-order-btn:hover {
-    background-image: url('../images/button2_hvr.svg');
+    background-image: url('./images/button2_hvr.svg');
     transform: scale(1.02);
 }
 
@@ -2109,7 +2109,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-image: url('../images/button.svg');
+    background-image: url('./images/button.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -2127,7 +2127,7 @@ body {
 }
 
 .cart-order-btn:hover {
-    background-image: url('../images/button_hvr.svg');
+    background-image: url('./images/button_hvr.svg');
     transform: scale(1.02);
 }
 
