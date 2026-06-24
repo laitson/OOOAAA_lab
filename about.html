@@ -1,20 +1,131 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>события</title>
-    <link rel="stylesheets" href="css/style.css">
+    <title>О компании</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
 
 <body>
+    <main></main>
+    <section class="metaballs-section">
+        <canvas id="metaballsCanvas"></canvas>
+        <div class="metaballs-content">
+            <nav class="menu">
+                <a class="menutext" href="./index.html">главная</a>
+                <a class="menutext" href="./about.html">о кОООмпании</a>
+                <a class="menutext" href="./events.html">события</a>
+                <a class="menutext" href="./shop.html">каталог</a>
+                <a class="menutext" href="./archive.html">архив</a>
+                <a class="menutext cart-link" href="./cart.html">
+                    <img src="./images/cart.svg" alt="Корзина" class="cart-icon">
+                </a>
+            </nav>
+
     
-    <nav class="menu">
-        <a class="menutext" href="./index.html">главная</a>
-        <a class="menutext" href="./about.html">ООО компании</a>
-        <a class="menutext" href="./events.html">события</a>
-        <a class="menutext" href="./cakes.html">каталог</a>
-        <a class="menutext" href="./archive.html">архив</a>
+        <div class="hero__content">
+            <div class="hero__left">
+                <h1 class="hero__heading hero__heading--about">Лаборатория ООО ААА</h1>
+                <p class="about-hero__subtitle">аналитика антропологической абсорбации</p>
+            </div>
+    
+            <div class="hero__right">
+                <div class="hero__item__opposite__subtitle">
+                    <img src="./images/arrow1.svg" alt="arrow" class="arrow-icon"> <span>единственное в России предприятие,
+                        обладающее технологией синтеза эмоциональных состояний.</span>
+                </div>
+                <div class="hero__item__opposite__title">
+                    <img src="./images/arrow2.svg" alt="arrow" class="arrow-icon">
+                    <span>мы делаем страхи, которые можно купить, получить по почте и использовать по назначению</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="about-history">
+            <div class="about-history__inner">
+                <p class="about-history__label">ИСТОРИЯ</p>
+                <div class="about-history__text-block">
+                    <p class="about-history__text">
+                        в 1960-е лаборатория получила негласный статус «объекта <br/>13-С». Работа шла в режиме абсолютной
+                        секретности. Никто <br />во всей Академии наук не хотел признавать, что такое вообще <br />возможно. Тем не
+                        менее, к 1970 году были созданы:
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-history__achievements">
+                <div class="about-history__item">
+                    <div class="about-history__icon">
+                        <img src="images/about_history1.svg" alt="Классификация" />
+                    </div>
+                    <p class="about-history__item-label">первая классификация<br/>страхов по плотности</p>
+                </div>
+                <div class="about-history__item">
+                    <div class="about-history__icon">
+                        <img src="images/about_history2.svg" alt="Протокол" />
+                    </div>
+                    <p class="about-history__item-label">протокол №7 – техника<br/>безопасной дозировки</p>
+                </div>
+                <div class="about-history__item">
+                    <div class="about-history__icon">
+                        <img src="images/about_history3.svg" alt="Сыворотка" />
+                    </div>
+                    <p class="about-history__item-label">первый образец<br/>сыворотки «Тишина»</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-slider">
+            <div class="about-slider__track">
+                <img src="./images/interior3.png" alt="Лаборатория 1" class="about-slider__img is-active">
+                <img src="./images/interior4.png" alt="Лаборатория 2" class="about-slider__img">
+                <img src="./images/interior1.png" alt="Лаборатория 3" class="about-slider__img">
+                <img src="./images/interior2.png" alt="Лаборатория 4" class="about-slider__img">
+                <img src="./images/interior5.png" alt="Лаборатория 5" class="about-slider__img">
+                <img src="./images/interior6.png" alt="Лаборатория 6" class="about-slider__img">
+            </div>
+            <div class="about-slider__controls">
+                <button class="about-slider__btn" id="prevSlide" aria-label="Назад"></button>
+                <button class="about-slider__btn" id="nextSlide" aria-label="Вперёд"></button>
+            </div>
+        </section>
+
+        <section class="about-today">
+            <h2 class="about-today__heading">В наши дни</h2>
+            <div class="about-today__columns">
+                <p class="about-today__text">
+                    сегодня лаборатория – это официально зарегистрированное ООО «ААА». Город Серпов остаётся нашей
+                    штаб-квартирой. Мы по-прежнему работаем в здании на улице Ленина, 23. Тот самый подвал теперь –
+                    музей и производственная площадка одновременно.<br /><br />
+                    мы синтезируем страх в промышленных масштабах и штучных экземплярах. Мы продаём его в
+                    интернет-магазине, поставляем в психотерапевтические центры и изредка — в киноиндустрию.
+                </p>
+                <p class="about-today__text">
+                    наша миссия — сделать контролируемый стресс инструментом личной эволюции. Каждая партия проходит
+                    глубокий лабораторный контроль и сопровождается индивидуальными картами протоколирования,
+                    гарантирующими высокую точность воздействия на рецепторы восприятия.
+                </p>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+    <p class="footer__copy">© ООО ААА 2026</p>
+    <address class="footer__address">
+        <span>Лаборатория страха ООО ААА</span>
+        <span>г. Серпов</span>
+    </address>
+    <nav class="footer__links">
+        <a href="404.html" class="footer__link">telegram</a>
+        <a href="404.html" class="footer__link">email</a>
     </nav>
-    
+</footer>
+
+
+    <script src="index.js"></script>
 </body>
+
+</html>

@@ -4,17 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>события</title>
-    <link rel="stylesheets" href="css/style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
 
     <nav class="menu">
-        <a class="menutext" href="./index.html">глАААвная</a>
+        <a class="menutext" href="./index.html">главная</a>
         <a class="menutext" href="./about.html">о компании</a>
         <a class="menutext" href="./events.html">сОООбытия</a>
-        <a class="menutext" href="./cakes.html">каталог</a>
+        <a class="menutext" href="./shop.html">каталог</a>
         <a class="menutext" href="./archive.html">архив</a>
+        <a class="menutext cart-link" href="./cart.html">
+            <img src="./images/cart.svg" alt="Корзина" class="cart-icon">
+        </a>
     </nav>
+    <main>
+        <div class="events__layout">
+    
+            <div class="events__poster-col">
+                <div class="events__poster-wrap">
+                    <img id="evPoster" class="events__poster-img" src="./images/poster1.2.png" alt="Плакат события" />
+                </div>
+                <div class="events__thumbs" id="evThumbs">
+                    <button class="events__thumb events__thumb--active" data-idx="0">
+                        <img src="./images/poster1.1.png" alt="Миниатюра 1" />
+                    </button>
+                    <button class="events__thumb" data-idx="1">
+                        <img src="./images/poster1.3.png" alt="Миниатюра 2" />
+                    </button>
+                </div>
+            </div>
+    
+            <div class="events__info-col">
+                <div class="events__text-blocks" id="evTextBlocks">
+                    <div class="events__text-block">
+                        <h3 class="events__text-label" id="evLabel1">близкое</h3>
+                        <p class="events__text-desc" id="evDesc1">шёпот, дыхание, шорохи. Источники – в 5–10 сантиметрах от
+                            вашего уха. Возникает устойчивое ощущение, что в комнате с вами кто-то есть.</p>
+                    </div>
+                    <div class="events__text-block">
+                        <h3 class="events__text-label" id="evLabel2">далёкое</h3>
+                        <p class="events__text-desc" id="evDesc2">шаги по металлу, эхо в пустоте, капли воды. Источники – за
+                            десятки метров от вас.</p>
+                    </div>
+                </div>
+                <div class="events__title-wrap">
+                    <h2 class="events__title" id="evTitle">с тобой в темноте</h2>
+                    <p class="events__date-time" id="evDateTime">17.08 19:00</p>
+                </div>
+            </div>
 
-</body>
+            <nav class="events__sidebar" id="evSidebar">
+                <ul class="events__list">
+                    <li class="events__list-item events__list-item--active" data-event="0">
+                        <span class="events__list-arrow">→</span>
+                        <div class="events__list-meta">
+                            <p class="events__list-date">17.08.2025</p>
+                            <p class="events__list-name">выставка «с тобой в темноте»</p>
+                        </div>
+                    </li>
+                    <li class="events__list-item" data-event="1">
+                        <span class="events__list-arrow">→</span>
+                        <div class="events__list-meta">
+                            <p class="events__list-date">14.10.2025</p>
+                            <p class="events__list-name">лекция «видеть страхи»</p>
+                        </div>
+                    </li>
+                    <li class="events__list-item" data-event="2">
+                        <span class="events__list-arrow">→</span>
+                        <div class="events__list-meta">
+                            <p class="events__list-date">17.08.2025</p>
+                            <p class="events__list-name">социальный проект «детские страхи»</p>
+                        </div>
+                    </li>
+                    <li class="events__list-item" data-event="3">
+                        <span class="events__list-arrow">→</span>
+                        <div class="events__list-meta">
+                            <p class="events__list-date">05.11.2025</p>
+                            <p class="events__list-name">перформанс «эхо изоляции»</p>
+                        </div>
+                    </li>
+                    <li class="events__list-item" data-event="4">
+                        <span class="events__list-arrow">→</span>
+                        <div class="events__list-meta">
+                            <p class="events__list-date">20.12.2025</p>
+                            <p class="events__list-name">лекция «твои фобии»</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+    
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__copy">© ООО ААА 2026</p>
+        <address class="footer__address">
+            <span>Лаборатория страха ООО ААА</span>
+            <span>г. Серпов</span>
+        </address>
+        <nav class="footer__links">
+            <a href="404.html" class="footer__link">telegram</a>
+            <a href="404.html" class="footer__link">email</a>
+        </nav>
+    </footer>
+
+
+    <script src="index.js"></script>
+    </body>
+    
+    </html>

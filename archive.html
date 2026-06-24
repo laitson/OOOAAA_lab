@@ -1,20 +1,180 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>события</title>
-    <link rel="stylesheets" href="css/style.css">
+    <title>Архив — Лаборатория</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
 
 <body>
-    
+
     <nav class="menu">
-        <a class="menutext" href="./index.html">глАААвная</a>
+        <a class="menutext" href="./index.html">главная</a>
         <a class="menutext" href="./about.html">о компании</a>
         <a class="menutext" href="./events.html">события</a>
-        <a class="menutext" href="./cakes.html">каталог</a>
+        <a class="menutext" href="./shop.html">каталог</a>
         <a class="menutext" href="./archive.html">АААрхив</a>
+        <a class="menutext cart-link" href="./cart.html">
+            <img src="./images/cart.svg" alt="Корзина" class="cart-icon">
+        </a>
     </nav>
 
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">Электронный архив<br>данных лаборатории</h1>
+        </section>
+
+        <section class="archive-list">
+
+            <div class="accordion__item" data-item>
+                <button class="accordion__header" aria-expanded="false">
+                    <span class="accordion__arrow"></span>
+                    <span class="accordion__label">первая классификация<br>страхов по ТОСТ62-19<br>от 1962 г.</span>
+                </button>
+                <div class="accordion__body">
+                    <div class="accordion__body-inner">
+                        <div class="accordion__text">
+                            <p>документ вводит базовую шкалу из шести категорий — от «фоновой тревожности» до «состояния
+                                отказа». Каждой категории присвоен буквенно-цифровой код и протокол первичного
+                                реагирования.</p>
+                            <p>часть формулировок впоследствии была изъята из обращения и заменена редакцией 1969 года.
+                                Полный текст не подлежит копированию.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item is-open" data-item>
+                <button class="accordion__header" aria-expanded="true">
+                    <span class="accordion__arrow"></span>
+                    <span class="accordion__label">образец работы<br>комитета шпионажа<br>1964 г.</span>
+                </button>
+                <div class="accordion__body">
+                    <div class="accordion__body-inner">
+                        <div class="archive-media" data-gallery>
+                            <div class="archive-display">
+                                <img class="archive-display__img" src="./images/notebook1.svg"
+                                    alt="Разворот дневника сотрудника, 1964 год">
+                            </div>
+                            <div class="archive-side">
+                                <div class="archive-side__text">
+                                    <p>отдел контрразведки и внутреннего <br> контроля изъял записи сотрудника, <br> содержащие
+                                        закрытую информацию.</p>
+                                    <p>проведение операции заняло 17 дней.</p>
+                                </div>
+                                <div class="archive-gallery">
+                                    <button class="archive-gallery__thumb" data-full="./images/notebook2.svg">
+                                        <img src="./images/notebook2.svg" alt="Поэтажный план корпуса">
+                                    </button>
+                                    <button class="archive-gallery__thumb" data-full="./images/notebook3.svg">
+                                        <img src="./images/notebook3.svg" alt="Страница дневника с пометками">
+                                    </button>
+                                    <button class="archive-gallery__thumb" data-full="./images/notebook4.svg">
+                                        <img src="./images/notebook4.svg" alt="Фотография корпуса лаборатории">
+                                    </button>
+                                    <button class="archive-gallery__thumb" data-full="./images/notebook5.svg">
+                                        <img src="./images/notebook5.svg" alt="Фотографии внутренних помещений">
+                                    </button>
+                                    <button class="archive-gallery__thumb" data-full="./images/notebook6.svg">
+                                        <img src="./images/notebook6.svg" alt="Запись и фотография фасада здания">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item" data-item>
+                <button class="accordion__header" aria-expanded="false">
+                    <span class="accordion__arrow"></span>
+                    <span class="accordion__label">химическая формула<br>проекта АП-13</span>
+                </button>
+                <div class="accordion__body">
+                    <div class="accordion__body-inner">
+                        <div class="accordion__text">
+                            <p>соединение зарегистрировано под внутренним индексом АП-13. Молекулярная запись и протокол
+                                синтеза хранятся отдельно от данной карточки и доступны только сотрудникам с уровнем
+                                допуска не ниже третьего.</p>
+                            <p>карточка содержит исключительно регистрационные метаданные: дата фиксации, ответственный
+                                наблюдатель, статус хранения — «законсервировано».</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item" data-item>
+                <button class="accordion__header" aria-expanded="false">
+                    <span class="accordion__arrow"></span>
+                    <span class="accordion__label">положение №7 1969 г.</span>
+                </button>
+                <div class="accordion__body">
+                    <div class="accordion__body-inner">
+                        <div class="accordion__text">
+                            <p>регламентирует порядок допуска сотрудников к объектам второй категории секретности и
+                                вводит обязательное двойное протоколирование результатов наблюдений.</p>
+                            <p>действие положения было приостановлено в 1974 году; причина приостановки в деле не
+                                зафиксирована.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item" data-item>
+                <button class="accordion__header" aria-expanded="false">
+                    <span class="accordion__arrow"></span>
+                    <span class="accordion__label">пособия для работы со страхом</span>
+                </button>
+                <div class="accordion__body">
+                    <div class="accordion__body-inner">
+                        <div class="accordion__text">
+                            <div class="info-links-block">
+                                <p class="email-subtitle">веб-плакат с инфографикой популярности страхов за 2025 год.</p>
+                                <a href="https://laitson.github.io/ooaa/" target="_blank" class="menutext footer__link">посмотреть</a>
+                            
+                                <p class="email-subtitle">интерактивный веб-плакат обучающий работать со страхом.</p>
+                                <a href="https://laitson.github.io/OA_3module/" target="_blank" class="menutext footer__link">попробовать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item" data-item>
+                <button class="accordion__header" aria-expanded="false">
+                    <span class="accordion__arrow"></span>
+                    <span class="accordion__label">образец бланка ХЦ-04</span>
+                </button>
+                <div class="accordion__body">
+                    <div class="accordion__body-inner">
+                        <div class="accordion__text">
+                            <p>типовой бланк для фиксации показателей при контрольных испытаниях. Содержит поля: дата,
+                                объект, исходный уровень тревоги, уровень после воздействия, подпись наблюдателя.</p>
+                            <p>бланк выводился из обращения трижды и каждый раз возвращался в оборот без объяснения
+                                причин.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copy">© ООО ААА 2026</p>
+        <address class="footer__address">
+            <span>Лаборатория страха ООО ААА</span>
+            <span>г. Серпов</span>
+        </address>
+        <nav class="footer__links">
+            <a href="404.html" class="footer__link">telegram</a>
+            <a href="404.html" class="footer__link">email</a>
+        </nav>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
+
+</html>

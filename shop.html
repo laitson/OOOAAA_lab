@@ -1,11 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOO AAA</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+
 <body>
-    
     <nav class="menu">
-        <a class="menutext" href="./index.html">глАААвная</a>
+        <a class="menutext" href="./index.html">главная</a>
         <a class="menutext" href="./about.html">о компании</a>
         <a class="menutext" href="./events.html">события</a>
-        <a class="menutext" href="./cakes.html">каталог</a>
+        <a class="menutext" href="./shop.html">кАААталог</a>
         <a class="menutext" href="./archive.html">архив</a>
+        <a class="menutext cart-link" href="./cart.html">
+            <img src="./images/cart.svg" alt="Корзина" class="cart-icon">
+        </a>
     </nav>
-    
+
+    <main class="main-shop product">
+<aside class="variants" aria-label="Варианты товара">
+    <button class="variant-swatch variant-swatch--product5 is-active" type="button" data-variant="product5"
+        aria-label="Вариант: Концентрат страха высоты" data-product-data='{
+            "title": "Концентрат страха высоты",
+            "mainImg": "./images/img1.png",
+            "thumb1": "./images/img2.png",
+            "thumb2": "./images/img3.png",
+            "description": "Концентрат высоты широко применяется в медицине и психологии для введения в малых дозах. Способствует выработке стойкости, храбрости и сохранению рассудка при взаимодействии с высотой.",
+            "volume": "0,33 мл",
+            "form": "жидкость",
+            "usage": "в малых дозах",
+            "aging": "не определён",
+            "storage": "вдали от обрыва"
+        }'>
+        <img src="./images/product5.svg" alt="Концентрат страха высоты">
+    </button>
+
+    <button class="variant-swatch variant-swatch--product1" type="button" data-variant="product1"
+        aria-label="Вариант: Диффузор скрип половиц" data-product-data='{
+            "title": "Диффузор «скрип половиц»",
+            "mainImg": "./images/img2.1.png",
+            "thumb1": "./images/img2.2.png",
+            "thumb2": "./images/img2.3.png",
+            "description": "Акустическо-ароматический тренажер. Воссоздает атмосферу старого пугающего дома, заставляя обострять слух и контролировать каждый шаг. Идеально для тренировки бдительности.",
+            "volume": "100 мл",
+            "form": "диффузор с палочками",
+            "usage": "испарение",
+            "aging": "5 лет",
+            "storage": "в сухом месте"
+        }'>
+        <img src="./images/product3.svg" alt="Диффузор скрип половиц">
+    </button>
+
+    <button class="variant-swatch variant-swatch--product2" type="button" data-variant="product2"
+        aria-label="Вариант: Спрей страх существования" data-product-data='{
+            "title": "Спрей «страх существования»",
+            "mainImg": "./images/img4.3.png",
+            "thumb1": "./images/img4.3.png",
+            "thumb2": "./images/img4.1.png",
+            "description": "Быстродействующее средство для мгновенного погружения в легкую экзистенциальную рефлексию. Помогает переоценить текущие приоритеты и задачи за считанные секунды.",
+            "volume": "50 мл",
+            "form": "спрей-аэрозоль",
+            "usage": "распыление",
+            "aging": "2 года",
+            "storage": "при комнатной температуре"
+        }'>
+        <img src="./images/product2.svg" alt="Спрей страх существования">
+    </button>
+
+    <button class="variant-swatch variant-swatch--product3" type="button" data-variant="product3"
+        aria-label="Вариант: Мотивирующий напиток дедлайн" data-product-data='{
+            "title": "Мотивирующий напиток «дедлайн»",
+            "mainImg": "./images/img3.2.png",
+            "thumb1": "./images/img3.1.png",
+            "thumb2": "./images/img3.3.png",
+            "description": "Энергетический эликсир экстренного реагирования. Моделирует ощущение, что до сдачи проекта осталось ровно 15 минут, открывая скрытые резервы продуктивности.",
+            "volume": "250 мл",
+            "form": "напиток",
+            "usage": "перед работой",
+            "aging": "1 год",
+            "storage": "в холодильнике"
+        }'>
+        <img src="./images/product4.svg" alt="Мотивирующий напиток дедлайн">
+    </button>
+
+    <button class="variant-swatch variant-swatch--product4" type="button" data-variant="product4"
+    aria-label="Вариант: шоппер" data-product-data='{
+        "title": "шоппер",
+        "mainImg": "./images/shopper1.png",
+        "thumb1": "./images/shopper2.png",
+        "thumb2": "./images/shopper3.png",
+        "description": "хлопковый шоппер с уникальным дизайном, разработанным детьми, принимающими участиями в III интерактивной выставке.",
+        "volume": "30*50 см",
+        "form": "сумка",
+        "usage": "беречь от огня",
+        "aging": "бессрочно",
+        "storage": "повсеместно"
+    }'>
+    <img src="./images/product6.svg" alt="Мотивирующий напиток дедлайн">
+    </button>
+    <button class="variant-swatch variant-swatch--product5" type="button" data-variant="product5"
+    aria-label="Вариант: блокнот" data-product-data='{
+        "title": "блокнот",
+        "mainImg": "./images/paper1.png",
+        "thumb1": "./images/paper2.png",
+        "thumb2": "./images/paper3.png",
+        "description": "блокнот на 120 страниц не линованный для записей своего самочуствия ",
+        "volume": "120 стр",
+        "form": "нелинованный",
+        "usage": "для записей",
+        "aging": "бессрочно",
+        "storage": "повсеместно"
+    }'>
+        <img src="./images/product7.svg" alt="Спрей страх существования">
+    </button>
+</aside>
+
+        <section class="gallery" aria-label="Фотографии товара">
+            <div class="gallery__main">
+                <img id="galleryMainImg" src="./images/img2.png" alt="Концентрат высоты в жидком виде">
+            </div>
+            <div class="gallery__thumbs">
+                <button class="gallery__thumb is-active" type="button" data-full="./images/img1.png"
+                    aria-label="Показать вариант 1">
+                    <img src="./images/img1.png" alt="Вариант 1">
+                </button>
+                <button class="gallery__thumb" type="button" data-full="./images/img2.png"
+                    aria-label="Показать variant 2">
+                    <img src="./images/img.png" alt="Вариант 2">
+                </button>
+            </div>
+        </section>
+
+        <section class="info">
+            <h1 class="info__title">Концентрат высоты в жидком виде 0,33 мл.</h1>
+
+            <div class="accordion">
+                <div class="accordion__item">
+                    <button class="accordion__trigger" type="button" aria-expanded="false"
+                        data-target="characteristics">
+                        <span>характеристики</span>
+                        <span class="accordion__arrow"></span>
+                    </button>
+                    <div class="accordion__panel" id="characteristics" hidden>
+                        <ul class="characteristics-list">
+                            <li><span>объём</span><span id="charVolume">0,33 мл</span></li>
+                            <li><span>форма выпуска</span><span id="charForm">жидкость</span></li>
+                            <li><span>способ применения</span><span id="charUsage">введение в малых дозах</span></li>
+                            <li><span>срок выдержки</span><span id="charAging">не определён</span></li>
+                            <li><span>хранение</span><span id="charStorage">вдали от обрыва</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__trigger" type="button" aria-expanded="true" data-target="description">
+                        <span>описание</span>
+                        <span class="accordion__arrow is-open"></span>
+                    </button>
+                    <div class="accordion__panel" id="description">
+                        <p>концентрат высоты широко применяется в медицине и психологии <br> для введения
+                            в малых дозах. Способствует выработке стойкости, храбрости и сохранению рассудка
+                            при взаимодействии с высотой</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="add-to-cart" type="button" data-product="Концентрат высоты в жидком виде">
+                <span class="btn-text">в корзину</span>
+            </button>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__copy">© ООО ААА 2026</p>
+        <address class="footer__address">
+            <span>Лаборатория страха ООО ААА</span>
+            <span>г. Серпов</span>
+        </address>
+        <nav class="footer__links">
+            <a href="404.html" class="footer__link">Telegram</a>
+            <a href="404.html" class="footer__link">Email</a>
+        </nav>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
+
+</html>

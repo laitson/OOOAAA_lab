@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>кОООрзина</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+
+<body>
+
+    <nav class="menu">
+        <a class="menutext" href="./index.html">главная</a>
+        <a class="menutext" href="./about.html">о компании</a>
+        <a class="menutext" href="./events.html">события</a>
+        <a class="menutext" href="./shop.html">каталог</a>
+        <a class="menutext" href="./archive.html">архив</a>
+    </nav>
+    <main class="cart-page">
+        
+        <div class="cart-header">
+            <h1 class="cart-title">корзина</h1>
+            <button class="cart-clear-btn" id="cartClearBtn">очистить всё</button>
+        </div>
+        
+        <div class="cart-layout">
+            <section class="cart-items" id="cartItems">
+                
+                <div class="cart-item" data-price="3500" data-id="1">
+                    <label class="cart-item__check-wrap">
+                        <input type="checkbox" class="cart-item__checkbox" checked />
+                        <span class="cart-item__checkmark"></span>
+                    </label>
+                    <div class="cart-item__img-wrap">
+                        <img src="./images/product5.svg" alt="Страх высоты" class="cart-item__img" />
+                    </div>
+                    <div class="cart-item__info">
+                        <p class="cart-item__name">Концентрат страха высоты</p>
+                        <p class="cart-item__desc">серия «классика», 30 мл</p>
+                    </div>
+                    <div class="cart-item__qty">
+                        <button class="cart-item__qty-btn" data-action="minus">−</button>
+                        <span class="cart-item__qty-val">1</span>
+                        <button class="cart-item__qty-btn" data-action="plus">+</button>
+                    </div>
+                    <p class="cart-item__price">3 500 ₽</p>
+                    <button class="cart-item__remove" aria-label="Удалить">✕</button>
+                </div>
+                
+                <div class="cart-item" data-price="4200" data-id="2">
+                    <label class="cart-item__check-wrap">
+                        <input type="checkbox" class="cart-item__checkbox" checked />
+                        <span class="cart-item__checkmark"></span>
+                    </label>
+                    <div class="cart-item__img-wrap">
+                        <img src="./images/product3.svg" alt="Тихий ужас" class="cart-item__img" />
+                    </div>
+                    <div class="cart-item__info">
+                        <p class="cart-item__name">Диффузор «скрип половиц»</p>
+                        <p class="cart-item__desc">лимитированная серия, 100 мл</p>
+                    </div>
+                    <div class="cart-item__qty">
+                        <button class="cart-item__qty-btn" data-action="minus">−</button>
+                        <span class="cart-item__qty-val">1</span>
+                        <button class="cart-item__qty-btn" data-action="plus">+</button>
+                    </div>
+                    <p class="cart-item__price">4 200 ₽</p>
+                    <button class="cart-item__remove" aria-label="удалить">✕</button>
+                </div>
+                
+                <div class="cart-empty" id="cartEmpty" style="display:none;">
+                    <p class="cart-empty__text">корзина пуста</p>
+                    <a href="./shop.html" class="cart-empty__link">перейти в каталог</a>
+                </div>
+            </section>
+            
+            <aside class="cart-summary">
+                <div class="cart-summary__row">
+                    <span class="cart-summary__label">выбрано товаров</span>
+                    <span class="cart-summary__val" id="cartCount">2</span>
+                </div>
+                <div class="cart-summary__row cart-summary__row--total">
+                    <span class="cart-summary__label">итого</span>
+                    <span class="cart-summary__total" id="cartTotal">7 700 ₽</span>
+                </div>
+                <a href="./404.html" class="cart-order-btn" id="cartOrderBtn">оформить заказ</a>
+            </aside>
+        </div>
+        
+        <section class="cart-recommended">
+            <p class="cart-recommended__label">вам может понравиться</p>
+            <div class="cart-recommended__grid">
+                <div class="cart-rec-card" data-name="Спрей «страх существования»" data-price="2900">
+                    <img src="./images/product2.svg" alt="Паника" class="cart-rec-card__img" />
+                    <p class="cart-rec-card__name">Спрей «страх существования»</p>
+                    <p class="cart-rec-card__price">2 900 ₽</p>
+                    <button class="cart-rec-card__btn">в корзину</button>
+                </div>
+                <div class="cart-rec-card" data-name="Мотивирующий напиток «дедлайн»" data-price="3100">
+                    <img src="./images/product1.svg" alt="Ночной страх" class="cart-rec-card__img" />
+                    <p class="cart-rec-card__name">Мотивирующий напиток «дедлайн»</p>
+                    <p class="cart-rec-card__price">3 100 ₽</p>
+                    <button class="cart-rec-card__btn">в корзину</button>
+                </div>
+                <div class="cart-rec-card" data-name="блокнот" data-price="3800">
+                    <img src="./images/product7.svg" alt="Глубина" class="cart-rec-card__img" />
+                    <p class="cart-rec-card__name">блокнот</p>
+                    <p class="cart-rec-card__price">3 800 ₽</p>
+                    <button class="cart-rec-card__btn">в корзину</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copy">© ООО ААА 2026</p>
+        <address class="footer__address">
+            <span>Лаборатория страха ООО ААА</span>
+            <span>г. Серпов</span>
+        </address>
+        <nav class="footer__links">
+            <a href="404.html" class="footer__link">telegram</a>
+            <a href="404.html" class="footer__link">email</a>
+        </nav>
+    </footer>
+        <script src="index.js"></script>
+    
+</body>
+
+</html>
