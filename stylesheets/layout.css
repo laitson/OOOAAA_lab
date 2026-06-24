@@ -1450,11 +1450,11 @@ body {
 }
 
 #prevSlide {
-    background-image: url('./images/Arrow3.svg');
+    background-image: url('./images/arrow3.svg');
 }
 
 #nextSlide {
-    background-image: url('./images/Arrow4.svg');
+    background-image: url('./images/arrow4.svg');
 }
 
 .about-slider__btn:hover {
